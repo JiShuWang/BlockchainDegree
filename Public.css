@@ -1,0 +1,223 @@
+/*
+Author:王基书
+Address:www.loveffc.cn
+Earliest Date:2021/3/8
+Lastest Date:2021/4/13
+Aim:存放公共头部,底部等公共样式
+*/
+/*PC端自适应*/
+@media (min-width: 1200px) {
+    .Public-Line{
+        width:auto;
+        height:5px;
+        background:#F5F5F5;
+        position:fixed;
+        top:0px;
+        left:0px;
+        right:0px;
+        z-index:6;
+    }
+    .Public-Header{
+        width:auto;
+        height:100px;
+        z-index: 6;
+    }
+    .Menu-Mobile{
+        display: none;
+    }
+    .Public-Header .Menu{
+        width: 1200px;
+        height:60px;
+        margin: 0px auto;
+        padding: 20px 0px;
+    }
+    .Public-Header .Logo{
+        width: 193px;
+        height: 58px;
+        float: left;
+        background-image: url("../Source/Logo.png");
+    }
+    .Public-Header .FirstNavigator{
+        width: 700px;
+        height:40px;
+        line-height: 40px;
+        float: right;
+        text-align: center;
+    }
+    .Public-Header .First,
+    .Public-Header .First-UserManage,
+    .Public-Header .First-CertificateManage,
+    .Public-Header .First-VerificationManage{
+        float: left;
+        width: 15%;
+        text-shadow: 0.5px 0.5px 2px #000000;
+    }
+    .Public-Header .First a,
+    .Public-Header .First-UserManage a,
+    .Public-Header .First-CertificateManage a{
+        color: white;
+        display: block;
+    }
+    .Public-Header .First:hover a{
+        border-bottom: 2px solid orange;
+    }
+    .Public-Header .SecondNavigator{
+        display: none;
+        height:400px;
+        width: 100%;
+        background: #ff7e5f;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 10px;
+        opacity: 0.9;
+        text-shadow: 0.5px 0.5px 2px black;
+        box-shadow: 0.2px 0.2px 5px white;
+    }
+    .Public-Header .First-UserManage:hover .SecondNavigator,
+    .Public-Header .First-CertificateManage:hover .SecondNavigator{
+        display: block;
+    }
+    .Public-Header .Second:hover a,.Public-Header .Second:hover i{
+        color:deepskyblue;
+    }
+    .Public-Header .Second{
+        display: inline-block;
+    }
+    .Public-Header .Second i:first-child{
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+    }
+    .Public-Header .Second i:last-child{
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+    }
+    .Public-Footer{
+        width: auto;
+        height:auto;
+        font-size: 0.9em;
+    }
+    .Public-Footer .Content{
+        width: 1200px;
+        margin: 0px auto;
+        text-align: center;
+        color: white;
+        line-height: 40px;
+        text-shadow: 0.5px 0.5px 2px #AAAAAA;
+    }
+    .Public-Footer .Link{
+        border: none;
+        border-radius: 10px;
+        border-bottom: 1px solid white;
+        box-shadow: 0.5px 0.5px 2px #AAAAAA;
+        text-shadow: 0.5px 0.5px 2px #AAAAAA;
+        color: black;
+    }
+}
+/*PC端自适应*/
+/*移动端自适应*/
+@media (max-width: 1199px) {
+    .Public-Line{
+        width:100%;
+        height:5px;
+        background:#F5F5F5;
+        position:fixed;
+        top:0px;
+        left:0px;
+        right:0px;
+        z-index:6;
+    }
+    .Public-Header{
+        display: none;
+        min-width:50%;
+        max-width:80%;
+        height:100%;
+        position: fixed;
+        border-radius: 10px;
+        z-index: 4;
+        opacity: 0.9;
+        background: #7F7FD5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .Menu-Mobile{
+        position: fixed;
+        width: 40px;
+        height: auto;
+        top: 30px;
+        left: 10px;
+        background-color: #EEEEEE;
+        color: black;
+        font-size: 2em;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 2;
+    }
+    .Public-Header .Menu{
+    }
+    .Public-Header .Logo{
+        width: 150px;
+        height:10px;
+        background-size: 100% 100%;
+        margin: 0px auto;
+        padding: 20px 0px;
+        background-image: url("../Source/Logo.png");
+    }
+    .Public-Header .FirstNavigator{
+        width: 100%;
+        height:auto;
+        text-align: center;
+    }
+    .Public-Header .FirstNavigator li{
+        height:40px;
+        line-height: 40px;
+        text-shadow: 0.5px 0.5px 2px #000000;
+    }
+    .Public-Header .FirstNavigator li a{
+        color: white;
+        text-align: right;
+    }
+    .Public-Header .FirstNavigator li:hover a{
+        color: orange;
+    }
+    .Public-Header .FirstNavigator li:hover a i{
+        font-size: 1.2em;
+    }
+    .Public-Header .FirstNavigator li i{
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        margin: 0px;
+        font-size: 1.2em;
+    }
+    .Public-Header .SecondNavigator{
+        display: none;
+    }
+    .Public-Header .SecondNavigator i{
+        color: #DDDDDD;
+    }
+    .Public-Footer{
+        width: auto;
+        height:auto;
+        font-size: 0.7em;
+    }
+    .Public-Footer .Content{
+        width: auto;
+        margin: 0px auto;
+        text-align: center;
+        color: white;
+        line-height: 40px;
+        text-shadow: 0.5px 0.5px 2px #AAAAAA;
+    }
+    .Public-Footer .Link{
+        border: none;
+        border-radius: 10px;
+        border-bottom: 1px solid white;
+        box-shadow: 0.5px 0.5px 2px #AAAAAA;
+        text-shadow: 0.5px 0.5px 2px #AAAAAA;
+        color: black;
+    }
+}
+/*移动端自适应*/

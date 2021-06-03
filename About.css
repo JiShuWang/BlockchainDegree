@@ -1,0 +1,249 @@
+/*
+Author:王基书
+Address:www.loveffc.cn
+Earliest Date:2021/3/24
+Lastest Date:2021/4/13
+Aim:存放About页面的独有样式
+*/
+/*多端共享*/
+.About #About1{
+    background-image: url('../Source/About1.png');
+}
+.About #Index1{
+    background-image: url('../Source/Index1.jpg');
+}
+.About #Index2{
+    background-image: url('../Source/Index2.jpg');
+}
+.About #About3{
+    background-image: url("../Source/HeadImage2.jpg");
+}
+.About #About4{
+    background-image: url("../Source/HeadImage3.jpg");
+}
+.About #About5{
+    background-image: url("../Source/HeadImage4.jpg");
+}
+.About #About6{
+    background-image: url("../Source/HeadImage5.jpg");
+}
+.About #About7{
+    background-image: url("../Source/HeadImage6.jpg");
+}
+.About #About8{
+    background-image: url("../Source/HeadImage.jpg");
+}
+/*多端共享*/
+/*PC端自适应*/
+@media (min-width: 1200px) {
+    body{
+        background: #7F7FD5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .About{
+        width: auto;
+        height:auto;
+        background-color: #F6F6F6;
+    }
+    .About .Content{
+        width: 1200px;
+        height: auto;
+        margin: 0px auto;
+        padding-bottom: 20px;
+    }
+    .About .Project,
+    .About .Team{
+        width: 1200px;
+        height:auto;
+    }
+    .About .Title{
+        text-align: center;
+        font-size: 2em;
+        line-height: 3em;
+        text-shadow: 1px 1px 5px #AAAAAA;
+    }
+    .About .Image{
+        opacity: 0.7;
+        margin: 20px auto;
+        border-radius: 10px;
+        background-size: contain;
+        box-shadow: 2px 2px 5px #AAAAAA;
+    }
+    .About .Image:hover{
+        opacity: 1;
+        box-shadow: 5px 5px 5px #AAAAAA;
+        cursor: cell;
+    }
+    .About h3{
+        margin: 10px auto;
+        color: orangered;
+        width: 85%;
+        padding: 0px 7.5%;
+        text-shadow: 1px 1px 5px white;
+        border-left: 2px solid orangered;
+    }
+    .About i{
+        color: deepskyblue;
+    }
+    .About i:hover{
+        color: aqua;
+    }
+    .About b{
+        color: deepskyblue;
+    }
+    .About b:hover{
+        color: orangered;
+    }
+    .About p:hover{
+        border-left: 2px solid orangered;
+    }
+    .About .Introduction{
+        margin: 5px auto;
+        width: 85%;
+        padding: 0px 7.5%;
+        text-indent: 2em;
+        line-height: 2em;
+        word-break: break-all;
+        text-shadow: 1px 1px 5px #AAAAAA;
+        border-left: 2px solid black;
+    }
+    .About .Introduction2{
+        width: 85%;
+        padding: 0px 7.5%;
+        text-indent: 4em;
+        line-height: 2em;
+        word-break: break-all;
+        border-left: 2px solid #CCCCCC;
+    }
+    .About .ImageTips{
+        display: block;
+        text-align: center;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+        color: black;
+    }
+    .About .HeadImage{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 30px 145px;
+        background-size: cover;
+    }
+    .About #About1{
+        width: 1200px;
+        height: 720px;
+    }
+    .About #About2{
+        width: 1190px;
+        height: 880px;
+        background-image: url('../Source/Register.png');
+    }
+    .About #About2:hover{
+        background-image: url('../Source/Register.gif');
+    }
+    .About #Index1{
+        width: 600px;
+        height: 300px;
+        background-size: 100% 100%;
+    }
+    .About #Index2{
+        width: 600px;
+        height: 300px;
+    }
+}
+/*PC端自适应*/
+/*移动端自适应*/
+@media (max-width: 1199px) {
+    body{
+        background: #7F7FD5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .About{
+        width: 100%;
+        height:auto;
+    }
+    .About .Content{
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        padding-bottom: 20px;
+        background-color: white;
+    }
+    .About h3{
+        width: 90%;
+        padding: 0px 3%;
+        margin: 10px 0px 10px 2%;
+        font-weight: bolder;
+        color: orangered;
+        border-left: 2px solid orangered;
+    }
+    .About b{
+        color: deepskyblue;
+    }
+    .About p:hover{
+        border-left: 2px solid orangered;
+    }
+    .About .Project,
+    .About .Team{
+        width: 100%;
+        height:auto;
+    }
+    .About .Title{
+        text-align: center;
+        font-size: 2em;
+        line-height: 2em;
+        text-shadow: 1px 1px 5px #AAAAAA;
+    }
+    .About .Image{
+        width: 100%;
+        height: 300px;
+        margin: 20px auto;
+        background-size: contain;
+        box-shadow: 1px 1px 5px white;
+    }
+    .About .ImageTips{
+        text-align: center;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    .About .Introduction{
+        width: 85%;
+        padding: 0px 5%;
+        margin: 10px 0px 10px 2%;
+        line-height: 2em;
+        word-break: break-all;
+        text-shadow: 1px 1px 5px #AAAAAA;
+        border-left: 2px solid black;
+    }
+    .About .Introduction2{
+        width: 85%;
+        padding: 0px 5%;
+        margin-left: 2%;
+        text-indent: 1em;
+        line-height: 2em;
+        word-break: break-all;
+        border-left: 2px solid #CCCCCC;
+    }
+    .About .ImageTips{
+        display: block;
+        text-align: center;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    .About .HeadImage{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 30px 10%;
+        background-size: cover;
+    }
+    .About #About2{
+        background-image: url('../Source/Register.gif');
+        background-size: 100% 100%;
+    }
+}
+/*移动端自适应*/

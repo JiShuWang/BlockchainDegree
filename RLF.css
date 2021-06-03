@@ -1,0 +1,571 @@
+/*
+Author:王基书
+Address:www.loveffc.cn
+Earliest Date:2021/3/8
+Lastest Date:2021/4/13
+Aim:存放Register,Login,Forget,SetPassword页面的样式
+*/
+/*PC端自适应*/
+@media (min-width: 1200px) {
+    body{
+        background: #67B26F;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .Register,
+    .Login,
+    .Forget{
+        width: auto;
+        z-index: 1;
+    }
+    .Register-Form,
+    .Login-Form,
+    .Forget-Form{
+        width: 1000px;
+        margin: 0px auto;
+        padding: 40px 0px;
+    }
+    .Register-Form .Title h2,
+    .Login-Form .Title h2,
+    .Forget-Form .Title h2{
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        float: left;
+        text-align: center;
+        color: deepskyblue;
+    }
+    .Register-Form .LeftLine,
+    .Register-Form .RightLine,
+    .Login-Form .LeftLine,
+    .Login-Form .RightLine,
+    .Forget-Form .LeftLine,
+    .Forget-Form .RightLine{
+        float: left;
+        width: 450px;
+        height: 25px;
+        border-bottom: 1px solid white;
+    }
+    .Register-Form .RegisterForm,
+    .Login-Form .LoginForm,
+    .Forget-Form .ForgetForm{
+        width:1000px;
+        height:auto;
+        margin: 20px auto;
+        display: inline-block;
+        font-size: 0.9em;
+    }
+    .Register-Form .RegisterForm input:not(.EmailText),
+    .Forget-Form .ForgetForm input:not(.EmailText){
+        width: 400px;
+        height:40px;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        margin: 10px 10px;
+        background: none;
+        color: white;
+        text-indent: 1em;
+    }
+    .Register-Form .RegisterForm option,
+    .Forget-Form .ForgetForm option{
+        color: black;
+    }
+    #Eye{
+        position: absolute;
+        right:49%;
+        top:297px;
+        color: orange;
+    }
+    #SecondEye{
+        position: absolute;
+        right:49%;
+        top:383px;
+        color: orange;
+    }
+    #Eye-SP{
+        position: absolute;
+        right:49%;
+        top:232px;
+        color: orange;
+    }
+    #SecondEye-SP{
+        position: absolute;
+        right:49%;
+        top:297px;
+        color: orange;
+    }
+    .SafeLevel{
+        width: 100%;
+        display: block;
+        line-height: 20px;
+        color: white;
+    }
+    .SafeLevel div{
+        display: inline-block;
+        width: 50px;
+        height:10px;
+        vertical-align: middle;
+        margin: 0px 10px;
+        border-radius: 10px;
+    }
+    .Low{
+        background-color: red;
+    }
+    .Middle{
+        background-color: orange;
+    }
+    .High{
+        background-color: deepskyblue;
+    }
+    .IDType,.EmailText{
+        height:40px;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        background: none;
+        color: white;
+        text-indent: 1em;
+        margin-left: 10px;
+    }
+    .IDType{
+        width: 400px;
+        margin: 10px;
+    }
+    .EmailText{
+        width: 200px;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+    .Suffix{
+        width: 200px;
+        height: 44px;
+        margin: 10px 10px 10px 0px;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        background: none;
+        color: white;
+        text-indent: 1em;
+    }
+    .Register-Form .RegisterForm span,
+    .Forget-Form .ForgetForm span{
+        display: inline-table;
+        margin: 0px auto;
+    }
+    .Register-Form .RegisterForm i:not(.Tips),
+    .Forget-Form .ForgetForm i:not(.Tips){
+        display: inline-block;
+        min-width: 100px;
+        max-width: 400px;
+        color: white;
+        text-align: right;
+    }
+    .Register-Form .RegisterForm .Tips,
+    .Forget-Form .ForgetForm .Tips{
+        color:white;
+        text-align: left;
+    }
+    .Register-Form .RegisterForm b,
+    .Forget-Form .ForgetForm b{
+        width: 30px;
+        font-size: 1.2em;
+        vertical-align: middle;
+    }
+    .Necessary{
+        color: red;
+        padding-right: 5px;
+    }
+    .Submit{
+        font-size: 1.5em;
+        display:block;
+    }
+    .Submit:hover{
+        font-size: 2em;
+    }
+    .FullBlock{
+        width: 110px;
+        height:40px;
+        float: left;
+    }
+    .Register-Form .RegisterForm .VerificationCode,
+    .Forget-Form .ForgetForm .VerificationCode{
+        height: 300px;
+        font-size: 1.5em;
+        cursor: pointer;
+        text-indent: 0em;
+        text-align: center;
+    }
+    .Register-Form .RegisterForm #VerificationCodeTips,
+    .Forget-Form .ForgetForm #VerificationCodeTips{
+        text-decoration: underline;
+    }
+    .Register-Form .RegisterForm #VerificationCodeTips:hover,
+    .Forget-Form .ForgetForm #VerificationCodeTips:hover{
+        color: #8DEEEE;
+    }
+    .Login-Form .LoginForm input:not(.Submit){
+        width: 400px;
+        height:40px;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        background: none;
+        color: white;
+        text-indent: 3em;
+    }
+    .Login-Form .LoginForm div{
+        width: 280px;
+        height: 40px;
+        float: left;
+    }
+    .Login-Form .LoginForm span{
+        display: block;
+        margin: 20px auto;
+    }
+    .Login-Form .LoginForm i{
+        color: white;
+    }
+    .Login-Form .LoginForm #UsernameTips,
+    .Login-Form .LoginForm #PasswordTips,
+    .Login-Form .LoginForm #VerificationTips{
+        display: block;
+        width: 260px;
+        height: 40px;
+        line-height: 40px;
+        float: right;
+    }
+    .Login-Form .LoginForm .Submit{
+        display:block;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        font-size: 1.5em;
+        margin: 20px auto;
+        width:200px;
+        height: 70px;
+        background-color:#0096e6;
+        color: white;
+    }
+    .Login-Form .LoginForm .Submit:hover{
+        font-size: 2em;
+    }
+    .Login-Form .LoginForm .Forget{
+        float: right;
+        color: white;
+        text-decoration: underline;
+        position: relative;
+        bottom: 65px;
+        right: 280px;
+    }
+    .Login-Form .LoginForm .Forget:hover{
+        color:orange;
+    }
+    .Login-Form .LoginForm .VerificationCode{
+        height: 300px;
+        font-size: 1.5em;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .Login-Form .LoginForm #VerificationCodeTips{
+        color: white;
+        text-decoration: underline;
+        font-size: 1em;
+        position: relative;
+        bottom: 5px;
+        left: 10px;
+    }
+    .Login-Form .LoginForm #VerificationCodeTips:hover{
+        color: #8DEEEE;
+    }
+}
+/*PC端自适应*/
+/*移动端自适应*/
+@media (max-width: 1199px) {
+    body{
+        background: #67B26F;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .Register,
+    .Login,
+    .Forget{
+        width: auto;
+        z-index: 1;
+    }
+    .Register-Form,
+    .Login-Form,
+    .Forget-Form{
+        width: auto;
+        margin: 0px auto;
+        padding: 40px 0px;
+    }
+    .Register-Form .Title h2,
+    .Login-Form .Title h2,
+    .Forget-Form .Title h2{
+        width: 30%;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        text-align: center;
+        color: deepskyblue;
+    }
+    .Register-Form .LeftLine,
+    .Register-Form .RightLine,
+    .Login-Form .LeftLine,
+    .Login-Form .RightLine,
+    .Forget-Form .LeftLine,
+    .Forget-Form .RightLine{
+         float: left;
+         width: 30%;
+         height: 15px;
+         border-bottom: 1px solid white;
+     }
+    .Register-Form .LeftLine,
+    .Login-Form .LeftLine,
+    .Forget-Form .LeftLine{
+        margin-left: 5%;
+    }
+    .Register-Form .RightLine,
+    .Login-Form .RightLine,
+    .Forget-Form .RightLine{
+        margin-right: 5%;
+    }
+    .Register-Form .RegisterForm,
+    .Login-Form .LoginForm,
+    .Forget-Form .ForgetForm{
+        width:100%;
+        height:auto;
+        margin: 20px auto;
+        display: inline-block;
+        font-size: 0.9em;
+    }
+    .Register-Form .RegisterForm input:not(.EmailText),
+    .Forget-Form .ForgetForm input:not(.EmailText){
+        width: 50%;
+        height:40px;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        background: none;
+        color: white;
+        text-indent: 1em;
+        z-index: 2;
+    }
+    .Register-Form .RegisterForm option,
+    .Forget-Form .ForgetForm option{
+        color: black;
+    }
+    #Eye{
+        position: absolute;
+        right:10%;
+        top:177px;
+        color: orange;
+    }
+    #SecondEye{
+        position: absolute;
+        right:10%;
+        top:290px;
+        color: orange;
+    }
+    #Eye-SP{
+        position: absolute;
+        right:10%;
+        top:102px;
+        color: orange;
+    }
+    #SecondEye-SP{
+        position: absolute;
+        right:10%;
+        top:177px;
+        color: orange;
+    }
+    .SafeLevel{
+        width: 100%;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+    }
+    .SafeLevel div{
+        display: inline-block;
+        width: 5%;
+        height:5px;
+        vertical-align: middle;
+        margin: 0px 10px;
+        border-radius: 10px;
+    }
+    .Low{
+        background-color: red;
+    }
+    .Middle{
+        background-color: orange;
+    }
+    .High{
+        background-color: #2EAFBB;
+    }
+    .IDType,.EmailText{
+        height:40px;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        background: none;
+        color: white;
+        text-indent: 1em;
+    }
+    .IDType{
+        width: 50%;
+        color: white;
+    }
+    .EmailText{
+        width: 25%;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+    .Suffix{
+        width: 25%;
+        height: 44px;
+        margin: 10px 10px 10px 0px;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        background: none;
+        color: white;
+        text-indent: 1em;
+    }
+    .Register-Form .RegisterForm span,
+    .Forget-Form .ForgetForm span{
+        width: 100%;
+    }
+    .Register-Form .RegisterForm i,
+    .Forget-Form .ForgetForm i{
+        display: inline-block;
+        width: 38%;
+        color: white;
+        text-align: right;
+    }
+    #UsernameTips,
+    #PasswordTips,
+    #RePasswordTips,
+    #PhoneNumberTips,
+    #IDTypeTips,
+    #IDTips,
+    #NameTips,
+    #EmailTips,
+    #VerificationTips{
+        display: block;
+        width: 100%;
+        height:auto;
+        margin: 0px auto;
+        line-height: 30px;
+        color: #CCCCCC;
+        font-size: 0.8em;
+        text-align: center;
+        overflow: hidden;
+    }
+    .Register-Form .RegisterForm .Tips,
+    .Forget-Form .ForgetForm .Tips{
+        color:white;
+        text-align: left;
+    }
+    .Register-Form .RegisterForm b,
+    .Forget-Form .ForgetForm b{
+        width: auto;
+        font-size: 1.2em;
+        vertical-align: middle;
+        margin: 0px 10px;
+    }
+    .Necessary{
+        color: red;
+        padding-right: 5px;
+    }
+    .Submit{
+        font-size: 1.5em;
+        display:block;
+    }
+    .Submit:hover{
+        font-size: 2em;
+    }
+    .FullBlock{
+        display: none;
+    }
+    .Register-Form .RegisterForm .VerificationCode,
+    .Login-Form .LoginForm .VerificationCode,
+    .Forget-Form .ForgetForm .VerificationCode{
+        display: block;
+        font-size: 1.2em;
+        cursor: pointer;
+        text-align: center;
+        margin: 10px auto;
+        opacity: 0.8;
+    }
+    .Register-Form .RegisterForm #VerificationCodeTips,
+    .Forget-Form .ForgetForm #VerificationCodeTips{
+        display: block;
+        margin: 10px auto;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .Register-Form .RegisterForm #VerificationCodeTips:hover,
+    .Forget-Form .ForgetForm #VerificationCodeTips:hover{
+        color: #8DEEEE;
+    }
+    .Login-Form .LoginForm input:not(.Submit){
+        width: 80%;
+        height:40px;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        background: none;
+        color: white;
+        text-indent: 3em;
+        z-index: 3;
+    }
+    .Login-Form .LoginForm div{
+        width: 5%;
+        height: 40px;
+        float: left;
+    }
+    .Login-Form .LoginForm span{
+        display: block;
+        margin: 0px auto;
+    }
+    .Login-Form .LoginForm i{
+        color: white;
+    }
+    .Login-Form .LoginForm #UsernameTips,
+    .Login-Form .LoginForm #PasswordTips,
+    .Login-Form .LoginForm #VerificationTips{
+        display: block;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        float: right;
+    }
+    .Login-Form .LoginForm .Submit{
+        display:block;
+        border: rgba(255,255,255,0.2) 2px solid !important;
+        border-radius: 30px;
+        font-size: 1.5em;
+        margin: 20px auto;
+        width:200px;
+        height: 70px;
+        background-color:#0096e6;
+        color: white;
+    }
+    .Login-Form .LoginForm .Submit:hover{
+        font-size: 2em;
+    }
+    .Login-Form .LoginForm #VerificationCodeTips,
+    .Login-Form .LoginForm .Forget{
+        color: white;
+        text-decoration: underline;
+        font-size: 1em;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .Login-Form .LoginForm .Forget:hover{
+        color:orange;
+    }
+    .Login-Form .LoginForm #VerificationCodeTips:hover{
+        color: #8DEEEE;
+    }
+}
+/*移动端自适应*/

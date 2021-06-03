@@ -1,0 +1,80 @@
+/*
+Author:王基书
+Address:www.loveffc.cn
+Earliest Date:2021/3/8
+Lastest Date:2021/4/13
+Aim:重置部分默认样式
+*/
+/*多端共用样式*/
+@font-face
+{
+    font-family:pingfang;
+    src:url("../Source/pingfang.ttf");
+}
+::-webkit-scrollbar{
+    width:7.5px;
+    height: 10px;
+    background-color: deepskyblue;
+}
+::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
+    background:orangered;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#FFDAB9;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: PingFang SC, pingfang, "微软雅黑","Source Code Pro", 微软雅黑 Light, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;;
+    font-weight: normal;
+    font-style: unset;
+    border: none;
+    outline: none;
+}
+body{
+    cursor: url("../Source/MouseIcon.cur"),default;
+}
+i{
+    margin: 0px 5px;
+    color: white;
+}
+h2{
+    color:#0096e6;
+}
+/*多端共用样式*/
+/*PC端自适应*/
+@media (min-width: 1200px){
+    ::-webkit-input-placeholder{ /* webkit browsers */
+        color: white;
+    }
+    ::-moz-placeholder{ /* firefox browsers */
+        color: white;
+    }
+    :-ms-input-placeholder{ /* IE browsers */
+        color: white;
+    }
+    canvas{
+        opacity: 1;
+    }
+}
+/*PC端自适应*/
+/*移动端自适应*/
+@media (max-width: 1199px){
+    ::-webkit-input-placeholder{
+        color: #CCCCCC;
+    }
+    ::-moz-placeholder{
+        color: #CCCCCC;
+    }
+    :-ms-input-placeholder{
+        color: #CCCCCC;
+    }
+    canvas{
+        opacity: 0.3;
+    }
+}
+/*移动端自适应*/

@@ -1,0 +1,443 @@
+/*
+Author:王基书
+Address:www.loveffc.cn
+Earliest Date:2021/4/8
+Lastest Date:2021/4/13
+Aim:存放Search页面的样式
+*/
+/*PC端自适应*/
+@media (min-width: 1200px) {
+    body{
+        background: #67B26F;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .Search{
+        width: auto;
+        min-height:450px;
+        height:auto;
+    }
+    .Search .Content{
+        width: 1200px;
+        margin: 0px auto;
+    }
+    .Search #Degree{
+        display: none;
+    }
+    .Search .Title{
+        text-align: center;
+        line-height: 3em;
+    }
+    .Search form{
+        width: 600px;
+        height: 200px;
+        margin: 0px auto;
+        padding: 50px 0px;
+    }
+    .Search form input{
+        width: 600px;
+        height:50px;
+        background: none;
+        border: rgba(255,255,255,255) 2px solid !important;
+        border-radius: 20px;
+        text-indent: 1em;
+        font-size: 1.2em;
+        color: white;
+        margin: 20px 0px;
+    }
+    .Search #EducationSearch,
+    .Search #DegreeSearch{
+        display: block;
+        width: 200px;
+        height: 60px;
+        margin: 20px auto;
+        font-size: 1.5em;
+        background: deepskyblue;
+        border-radius: 20px;
+    }
+    .Search i{
+        margin-left: 20px;
+        color:deepskyblue;
+    }
+    .Search #EducationSearch:hover,
+    .Search #DegreeSearch:hover{
+        font-size: 2em;
+    }
+    .Search .File{
+        margin: 0px auto;
+        width: 900px;
+        height: 700px;
+    }
+    .Search .Data{
+        margin: 0px auto;
+        width: 850px;
+        height: 620px;
+        background-size: 100% 100%;
+    }
+    .Search .Data .Symbol{
+        position: relative;
+        top:100px;
+        width: 100px;
+        height:100px;
+        margin: 0px auto;
+        background-image: url("../Source/Symbol.png");
+        background-size: contain;
+    }
+    .Search .Data .Symbol2{
+        position: relative;
+        top:100px;
+        width: 300px;
+        height:100px;
+        margin: 0px auto;
+        background-image: url("../Source/Symbol2.png");
+        background-size: 100% 100%;
+    }
+    .Search .DegreeTitle{
+        font-family: "楷体";
+        padding-top: 80px;
+        font-size: 2.5em;
+        line-height: 2em;
+        text-align: center;
+    }
+    .Search .EducationTitle{
+        font-family: "楷体";
+        padding-top: 80px;
+        font-size: 2.5em;
+        line-height: 2em;
+        text-align: center;
+    }
+    .Search .Information{
+        display: inline-block;
+        float: left;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        width: 630px;
+        padding: 0px 0px 0px 60px;
+        text-indent: 2em;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    .Search .Information{
+        display: inline-block;
+        float: left;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        width: 550px;
+        padding: 0px 20px 0px 90px;
+        text-indent: 2em;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    .Search pre b{
+        font-family: "楷体";
+        font-size: 1em;
+        letter-spacing: 10px;
+        margin: 0px 5px 0px 10px;
+    }
+    .Search .Data .HeadImage{
+        display: inline-block;
+        float: right;
+        background-size: cover;
+        width: 100px;
+        height:100px;
+        margin: 0px 60px 50px 0px;
+    }
+    .Search .Data .HeadImage{
+        display: inline-block;
+        float: right;
+        background-size: cover;
+        width: 100px;
+        height:100px;
+        margin: 0px 90px 50px 0px;
+    }
+    .Search .UniversitySign{
+        display: inline-block;
+        font-family: "楷体";
+        font-size: 1.3em;
+        position: relative;
+        top: 5px;
+        left: 140px;
+        letter-spacing: 1em;
+    }
+    .Search .Headmaster{
+        display: inline-block;
+        font-family: "楷体";
+        font-size: 1.3em;
+        position: relative;
+        top: 30px;
+        left: 160px;
+        line-height: 2em;
+        text-align: center;
+    }
+    .Search .HeadmasterName{
+        display: inline-block;
+        font-family: "华文仿宋";
+        font-size: 1.7em;
+        position: relative;
+        left: 180px;
+        top: 5px;
+        text-align: center;
+        color: red;
+        letter-spacing: 1em;
+    }
+    .Search .Data .DegreeID{
+        display: inline-block;
+        position: relative;
+        left: 60px;
+        top:40px;
+    }
+    .Search .Data .EducationID{
+        display: inline-block;
+        position: relative;
+        left: 90px;
+        top:40px;
+    }
+    .Search .Data .PublishDate{
+        display: inline-block;
+        position: relative;
+        left: 300px;
+        top:40px;
+    }
+    .Search .Data .PublishDate{
+        display: inline-block;
+        position: relative;
+        left: 280px;
+        top:40px;
+    }
+    .Search .PublishDate i{
+        color:black;
+        font-family: "楷体";
+        letter-spacing: 0.5em;
+        margin-left: 10px;
+    }
+    .Search .Notice{
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50px;
+        font-weight: bolder;
+    }
+    .BlockChainData{
+        width: 80%;
+        margin-top: 20px;
+        padding: 0px 10%;
+    }
+    .BlockChainData i{
+        color: #CCCCCC;
+    }
+    .BlockChainData .BlockID{
+        float: left;
+    }
+    .BlockChainData .HashValue{
+        float: right;
+    }
+    .Search .Result{
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        line-height: 250px;
+    }
+    .Search a{
+        color: deepskyblue;
+        border-bottom: 2px solid deepskyblue;
+        padding-bottom: 1px;
+    }
+    .Search a:hover{
+        color: orangered;
+        border-bottom: 2px solid orangered;
+    }
+}
+/*PC端自适应*/
+/*移动端自适应*/
+@media (max-width: 1199px) {
+    body{
+        background: #67B26F;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .Search{
+        width: auto;
+        height:auto;
+    }
+    .Search .Content{
+        width: auto;
+        margin: 0px auto;
+    }
+    .Search .Content2{
+        height:1150px;
+    }
+    .Search #Degree{
+        display: none;
+    }
+    .Search .Title{
+        text-align: center;
+        padding: 50px 0px 20px 0px;
+    }
+    .Search form{
+        width: 100%;
+        height: 250px;
+        margin: 0px auto;
+        padding: 50px 0px;
+    }
+    .Search form input{
+        width: 90%;
+        height:50px;
+        background: none;
+        border: rgba(255,255,255,255) 2px solid !important;
+        border-radius: 20px;
+        text-indent: 1em;
+        font-size: 1.2em;
+        color: white;
+        margin: 20px 5%;
+    }
+    .Search i{
+        color: deepskyblue;
+    }
+    .Search #EducationSearch,
+    .Search #DegreeSearch{
+        display: block;
+        margin: 30px auto;
+        width: 200px;
+        height:60px;
+        font-size: 1.5em;
+        background: deepskyblue;
+        border-radius: 20px;
+    }
+    .Search #Search:hover{
+        font-size: 2em;
+    }
+    .Search .File{
+        width: 100%;
+        height: 890px;
+    }
+    .Search .Data{
+        margin: 0px auto;
+        width: 100%;
+        height: 900px;
+        background-size: 100% 100%;
+    }
+    .Search .Data .Symbol{
+        position: relative;
+        top:100px;
+        width: 100px;
+        height:100px;
+        margin: 0px auto;
+        background-image: url("../Source/Symbol.png");
+        background-size: contain;
+    }
+    .Search .Data .Symbol2{
+        position: relative;
+        top:140px;
+        width: 300px;
+        height:100px;
+        margin: 0px auto;
+        background-image: url("../Source/Symbol2.png");
+        background-size: 100% 100%;
+    }
+    .Search .DegreeTitle,
+    .Search .EducationTitle{
+        padding-top: 80px;
+        font-size: 2.5em;
+        line-height: 2em;
+        text-align: center;
+    }
+    .Search .EducationTitle{
+        padding-top: 120px;
+        font-size: 2.5em;
+        line-height: 2em;
+        text-align: center;
+    }
+    .Search .Information{
+        display: inline-block;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        width: 80%;
+        padding: 0px 10% 0px 10%;
+        text-indent: 2em;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    .Search .Data pre b{
+        font-size: 1em;
+        margin: 0px 5px 0px 10px;
+        color: #444444;
+        font-weight: bolder;
+    }
+    .Search .HeadImage{
+        display: block;
+        margin: 0px auto;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+    }
+    .Search .UniversitySign{
+        display: inline-block;
+        font-size: 1.3em;
+        position: relative;
+        left: 40px;
+        bottom: 20px;
+    }
+    .Search .Headmaster{
+        display: inline-block;
+        font-size: 1.3em;
+        position: relative;
+        top: 5px;
+        left: 30px;
+        line-height: 2em;
+        text-align: center;
+    }
+    .Search .HeadmasterName{
+        display: inline-block;
+        font-size: 1.3em;
+        position: relative;
+        left: 30px;
+        bottom: 20px;
+        text-align: center;
+        color: red;
+    }
+    .Search .DegreeID,
+    .Search .EducationID{
+        display: block;
+        position: relative;
+        top:20px;
+        text-align: center;
+    }
+    .Search .PublishDate,.Education .PublishDate{
+        display: block;
+        position: relative;
+        top:30px;
+        text-align: center;
+    }
+    .Degree .PublishDate i,.Education .PublishDate i{
+        color:black;
+        letter-spacing: 0.5em;
+        margin-left: 10px;
+    }
+    .Search .Notice{
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50px;
+        font-weight: bolder;
+    }
+    .Search .BlockChainData{
+        width: 90%;
+        margin-top: 20px;
+        padding: 0px 5%;
+    }
+    .Search .BlockChainData i{
+        display: inline;
+        color: #CCCCCC;
+    }
+    .Search .BlockChainData .BlockID{
+        display: block;
+        word-break: break-all;
+    }
+    .Search .BlockChainData .HashValue{
+        display: block;
+        word-break: break-all;
+    }
+}
+/*移动端自适应*/
